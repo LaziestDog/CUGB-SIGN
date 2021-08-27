@@ -128,7 +128,7 @@ try:
     url = TGurl.format(config["TGtoken"])
     data = {
         'chat_id': config["TGID"],
-        'text': f'#健康信息提交\n{text}',
+        'text': f'#健康信息提交\n{subj}\n{content}',
         'disable_web_page_preview': 'true'
             }
     proxyurl = PROXYurl.format(config["PROXY"],config["PROXYip"],config["PROXYport"])
