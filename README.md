@@ -1,4 +1,5 @@
 # CUGB-SIGN
+![](https://visitor-badge.glitch.me/badge?page_id=LaziestDog.CUGB-SIGN )
 
 An automatic python script for CUGB's COVID-19 report  
 中国地质大学（北京）疫情期间每日自动进行健康打卡上报  
@@ -34,27 +35,27 @@ cp config.example.json config.json
 > 个人建议抓包一次然后自行替换
 
 ```
-"data":
-        {
-        "xmqkb":{
-                "id":"4a4ce9d6725c1d4001725e38fbdb07cd"},
-                "c1":"37.2℃及以下",
-                "c2":"健康",
-                "c17":"否",
-                "c4":"否",
-                "c7":"否",
-                "c9":"否",
-                "c6":"否",
-                "c5":"否",
-                "type":"YQSJCJ",
-                "location_longitude":"116.37951",//不在学校请把这个改了，如有问题自负
-                "location_latitude":"39.594672",//不在学校请把这个改了，如有问题自负
-                "location_address":"北京市海淀区学院路街道中国地质大学(北京)"//不在学校请把这个改了，如有问题自负
+"data":{
+        "xmqkb":{"id":"4a4ce9d6725c1d4001725e38fbdb07cd"},
+        "c1":"37.2℃及以下",
+        "c2":"健康",
+        "c17":"否",
+        "c4":"否",
+        "c7":"否",
+        "c9":"否",
+        "c6":"否",
+        "c5":"否",
+        "type":"YQSJCJ",
+        "location_longitude":"116.37951",//不在学校请把这个改了，如有问题自负
+        "location_latitude":"39.594672",//不在学校请把这个改了，如有问题自负
+        "location_address":"北京市海淀区学院路街道中国地质大学(北京)"//不在学校请把这个改了，如有问题自负
         },
 ```
 
 ##### 信息推送
 
+> 可填可不填，仅仅起通知作用
+> 目前没有写单独推送，配置几个推送几个
 > 以后再写具体申请教程
 
 ```
@@ -91,13 +92,18 @@ python3 cugbsign.py
 * 按`ESC` 输入`:wq`退出crontab编辑页面
 
 
+## TO DO
+
+- [x] 方糖气球推送
+- [x] 企业微信推送
+- [x] TGbot推送及其代理
+- [ ] bark推送
+- [ ] 优化代码(try)
+- [ ] 推送设定为可自选(使用函数)
+- [ ] 编写推送相关申请教程
+
+
 
 ## 致谢
 
 Some core code is from [hanrc97](https://github.com/hanrc97/FucknCoVReport)
-
-
-
-## Thank you for the visit. 
-
-![](https://visitor-badge.glitch.me/badge?page_id=LaziestDog.CUGB-SIGN )
