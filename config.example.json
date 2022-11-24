@@ -5,20 +5,19 @@
         {
         "xmqkb":{
                 "id":"4a4ce9d6725c1d4001725e38fbdb07cd"},
-                "c1":"37.2℃及以下",
-                "c2":"健康",
+                "c1":"是",
                 "c17":"否",
                 "c4":"否",
                 "c7":"否",
                 "c9":"否",
-                "c6":"否",
-                "c5":"否",
+                "c19":"是",
                 "type":"YQSJCJ",
                 "location_longitude":"116.37951",//不在学校请把这个改了，如有问题自负
                 "location_latitude":"39.594672",//不在学校请把这个改了，如有问题自负
                 "location_address":"北京市海淀区学院路街道中国地质大学(北京)"//不在学校请把这个改了，如有问题自负
         },
         "FTkey": "", // 方糖key 在sc.ftqq.com申请
+        "TGurl": "api.telegram.org", // TG推送API，可自建反代
         "TGtoken": "",//你的TG机器人的bottoken，在@botfather内申请
         "TGID": "",//你的TG账号的ID
         "QYWXsecret": "",//你的企业微信程序的密钥

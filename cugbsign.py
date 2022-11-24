@@ -22,12 +22,12 @@ posturl = 'https://stu.cugb.edu.cn:443/syt/zzapply/operation.htm'
 FTurl = 'https://sctapi.ftqq.com/{}.send'
 QYWXtokenurl = 'https://qyapi.weixin.qq.com/cgi-bin/gettoken?corpid={}&corpsecret={}'
 QYWXposturl ='https://qyapi.weixin.qq.com/cgi-bin/message/send?access_token={}'
-TGurl = 'https://api.telegram.org/bot{}/sendMessage'
+TGurl = 'https://{}/bot{}/sendMessage'
 PROXYurl = '{}://{}:{}'
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/86.0.4230.1 Safari/537.36',
-    'Content-Type': 'application/x-www-form-urlencoded'
+    'Content-Type': 'application/x-www-form-urlencoded; charset=UTF-8'
     }
 
 requests.packages.urllib3.disable_warnings()
@@ -125,7 +125,7 @@ try:
     requests.post(posturl, data=json.dumps(data))
 
 
-    url = TGurl.format(config["TGtoken"])
+    url = TGurl.format(config["TGurl"], config["TGtoken"])
     data = {
         'chat_id': config["TGID"],
         'text': f'#健康信息提交\n{subj}\n{content}',
